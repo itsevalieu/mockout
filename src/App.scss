@@ -1,0 +1,33 @@
+@import "./styles/variables";
+
+.App {
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
+  .FormSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+      textarea {
+        height: 10em;
+        margin-bottom: 1em;
+      }
+      button {
+        background: $highlight;
+        color: $secondary;
+        height: 45px;
+        text-transform: uppercase;
+        border: none;
+        letter-spacing: 0.1rem;
+      }
+    }
+    .description {
+      text-align: left;
+    }
+  }
+}
