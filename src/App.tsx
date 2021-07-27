@@ -1,7 +1,24 @@
+import { useState } from "react";
 import './App.scss';
 import Hero from "./components/Hero";
+import Item from "./components/Item";
 
-function App() {
+const App = () => {
+  const [items, setItems] = useState([
+    {
+      question: "What is the difference between the DOM and Virtual DOM?",
+      answer: "The DOM is a component tree that the browser creates and updates as a whole everytime an element changes.\n The Virtual DOM is a copy of this component tree and only updates the specific element that changes.",
+      category: "React",
+      link: ["www.youtube.com/what-is-the-dom", "www.google.com/what-is-the-dom"]
+    },
+    {
+      question: "What is the difference between the DOM and Virtual DOM?",
+      answer: "The DOM is a component tree that the browser creates and updates as a whole everytime an element changes.\n The Virtual DOM is a copy of this component tree and only updates the specific element that changes.",
+      category: "React",
+      link: ["www.youtube.com/what-is-the-dom"]
+    }
+  ]);
+
   return (
     <div className="App">
       <Hero/>
@@ -20,7 +37,7 @@ function App() {
             </div>
             <div className="ItemList">
               <ul>
-                <li></li>
+                {items.map((item, index) => <Item key={index} {...item}/>) }
               </ul>
             </div>
           </div>

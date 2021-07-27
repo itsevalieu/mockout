@@ -1,0 +1,8 @@
+@import "../styles/variables";
+
+.Hero {
+    background: $primary;
+    color: $secondary;
+    display: flex;
+    justify-content: center;
+}
