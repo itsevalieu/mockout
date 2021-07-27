@@ -1,24 +1,53 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './App.scss';
 import Hero from "./components/Hero";
-import Item from "./components/Item";
+import Item, { ItemProps } from "./components/Item";
+
 
 const App = () => {
-  const [items, setItems] = useState([
-    {
-      question: "What is the difference between the DOM and Virtual DOM?",
-      answer: "The DOM is a component tree that the browser creates and updates as a whole everytime an element changes.\n The Virtual DOM is a copy of this component tree and only updates the specific element that changes.",
-      category: "React",
-      link: ["www.youtube.com/what-is-the-dom", "www.google.com/what-is-the-dom"]
-    },
-    {
-      question: "What is the difference between the DOM and Virtual DOM?",
-      answer: "The DOM is a component tree that the browser creates and updates as a whole everytime an element changes.\n The Virtual DOM is a copy of this component tree and only updates the specific element that changes.",
-      category: "React",
-      link: ["www.youtube.com/what-is-the-dom"]
+  const api: string = process.env.REACT_APP_API_URL || "";
+  // const options = {
+  //     method: 'GET', // *GET, POST, PUT, DELETE, etc.
+  //     headers: {
+  //       'Content-Type': 'text/plain'
+  //       // 'Content-Type': 'application/x-www-form-urlencoded',
+  //     }
+  // };
+  const [items, setItems] = useState<any[]>([]);
+  useEffect(() => {
+    console.log("UseEffect");
+    const fetchFlashcards = () => {
+      console.log(api);
+      fetch(api).then((res) => {
+          return res.json();
+      }).then((issues) => {
+        
+        let flashcards: any[] = [];
+        console.log("issues", issues);
+        for(let issue of issues) {
+          let flashcard: ItemProps = {
+            question: issue.title,
+            answer: issue.body,
+            categories: [...issue.labels],
+            link: []
+          }
+          flashcards.push(flashcard);
+        }
+        console.log("Check", flashcards);
+        setItems(flashcards);
+      });
     }
-  ]);
-
+    fetchFlashcards();
+    return () => console.log("Unmount");
+  }, [api]); 
+  
+  //fetchFlashcards
+  //handleFormSubmit
+  //removeStopWords
+  //transformWords
+  //countWords
+  //filterCategories -> return []
+  
   return (
     <div className="App">
       <Hero/>
