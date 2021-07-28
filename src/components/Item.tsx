@@ -19,7 +19,7 @@ const Item = (item: ItemProps, key: any) => {
             {
                 expand ? 
                 <div className="answer">
-                    <p>{item.answer}</p>
+                    <div className="answer-body">{item.answer}</div>
                     {/* <ul>{item.link.map((link, index) => <li key={index}>{link}</li>)}</ul> */}
                 </div> 
                 :
