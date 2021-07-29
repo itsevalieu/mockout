@@ -2,12 +2,15 @@
 
 .Item {
     border: 1px solid #ccc;
-    background: $secondary;
+    background: #fefefe;
     min-height: 200px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    border-radius: 3px;
    
     margin-bottom: 1em;
     &:hover {
         background: #ccc;
+        box-shadow: 1px 1px 1px 1px #fff;
         cursor: pointer;
     }
     .question {
