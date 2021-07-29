@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+.description {
+    text-align: left;
+}
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */ 
+}
+.topics {
+    border: 1px solid $primary;
+    border-radius: 15px;
+    background: $primary;
+    padding: 5px 10px;
+    margin-right: 5px;
+    color: #fff;
+}
