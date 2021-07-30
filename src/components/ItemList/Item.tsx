@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Item.scss";
+import ReactMarkdown from "react-markdown";
 
 export interface ItemProps {
     question: string,
@@ -19,7 +20,7 @@ const Item = (item: ItemProps, key: any) => {
             {
                 expand ? 
                 <div className="answer">
-                    <div className="answer-body">{item.answer}</div>
+                    <div className="answer-body"><ReactMarkdown>{item.answer}</ReactMarkdown></div>
                     {/* <ul>{item.link.map((link, index) => <li key={index}>{link}</li>)}</ul> */}
                 </div> 
                 :
