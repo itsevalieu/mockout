@@ -1,7 +1,7 @@
 import "./ItemList.scss";
 import Item from "./Item";
 
-type ItemListProps = {
+export interface ItemListProps {
     filteredTopics: string[],
     items: any[],
 }
