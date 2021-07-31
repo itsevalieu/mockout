@@ -2,28 +2,31 @@
 
 .Item {
     border: 1px solid #ccc;
-    background: #fefefe;
-    min-height: 200px;
-    box-shadow: 1px 1px 1px 1px #ccc;
-    border-radius: 3px;
+    background: #fff;
+    // min-height: 150px;
+    box-shadow: 1px 1px 1px 1px $shadow;
+    border-radius: 5px;
    
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     &:hover {
-        background: #ccc;
-        box-shadow: 1px 1px 1px 1px #fff;
+        background: #fefefe;
+        box-shadow: none;
         cursor: pointer;
     }
     .question {
+        // border: 1px solid red;
+        height: 100%;
         display: flex;
-        justify-self: center;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        padding: 15px 0;
+        padding: 15px 0 5px;
+        
     }
     .answer {
-        background: white;
+        background: #ddd;
         height: 100%;
         padding: 15px;
         .answer-body {
@@ -31,4 +34,29 @@
             line-height: 1.4rem;
         }
     }
+    pre {
+        background: #efefef;
+        overflow-x: scroll;
+        padding: 10px;
+        code {
+            font-size: 0.8rem;
+        }
+    }
+    .categories {
+        // border: 1px solid red;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        // display: flex;
+        display: flex;
+        justify-self: flex-start;
+        li {
+            font-size: 0.6rem;
+            margin: 0 5px;
+            text-transform: uppercase;
+            // background: red;
+        }
+    }
+
 }

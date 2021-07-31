@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import './App.scss';
+import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import { ItemProps } from "./components/ItemList/Item";
 import ItemList from "./components/ItemList/ItemList";
@@ -162,10 +163,11 @@ const App = () => {
             <button type="submit">Generate</button>
           </form>
           {
-            isLoading ? <div><p>Loading...</p></div> : <ItemList filteredTopics={filteredTopics} items={items}/>
+            isLoading ? null: <ItemList filteredTopics={filteredTopics} items={items}/>
           }
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }

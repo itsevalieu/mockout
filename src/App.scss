@@ -16,14 +16,23 @@
       textarea {
         height: 10em;
         margin-bottom: 1em;
+        padding: 5px;
       }
       button {
         background: $highlight;
         color: $secondary;
+        font-weight: bold;
         height: 45px;
         text-transform: uppercase;
         border: none;
         letter-spacing: 0.1rem;
+        box-shadow: 1px 1px 1px 1px $shadow;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0px 2px 2px 1px #fff;
+          background: $secondary;
+          color: $highlight;
+        }
       }
     }
   }
