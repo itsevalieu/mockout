@@ -1,7 +1,7 @@
 import axios from "axios";
 import './Form.scss';
 import { useRef } from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ItemProps } from "../ItemList/Item";
 import ItemList from "../ItemList/ItemList";
 import { useQuery } from 'react-query';
@@ -140,7 +140,8 @@ const Form = () => {
         <main className="FormSection">
             <div className="container">
             <form onSubmit={handleFormSubmit}>
-                <textarea ref={textAreaRef} placeholder="Insert Job Description text" autoFocus/>
+                <label htmlFor="job-description">Insert Job Description</label>
+                <textarea name="job-description" ref={textAreaRef} placeholder="Insert Job Description text" autoFocus/>
                 <button type="submit">Generate</button>
             </form>
             {
