@@ -22,6 +22,16 @@ test("renders categories if filteredTopics is not empty", async () => {
   const categoriesEl = await screen.findByTestId("categories");
   expect(categoriesEl).not.toHaveTextContent(/flashcard/i);
 });
+test("renders items if items is not empty", async () => {
+  render(
+    <ItemList
+      filteredTopics={itemListData.filteredTopics}
+      items={itemListData.items}
+    />
+  );
+  const itemsEl = await screen.findByTestId("items");
+  expect(itemsEl).not.toBeNull();
+});
 
 //categories show without flashcard
 //item list displays none if empty item

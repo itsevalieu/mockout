@@ -31,12 +31,12 @@ const ItemList = ({ filteredTopics, items }: ItemListProps) => {
             <br />
           </div>
           <div className="ItemList">
-            <ul>
+            <ul data-testid="items">
               {items.map((item, index) => (
                 <Item key={index} {...item} />
               ))}
             </ul>
-          </div>{" "}
+          </div>
         </>
       )}
     </div>
