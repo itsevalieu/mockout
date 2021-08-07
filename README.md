@@ -63,16 +63,17 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <!-- <li><a href="#prerequisites">Prerequisites</a></li> -->
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#available-scripts">Available Scripts</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <!-- <li><a href="#usage">Usage</a></li> -->
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
   </ol>
 </details>
 
@@ -104,14 +105,9 @@ Currently, I'm using the Github API to store my flashcards as "issues." I know t
 
 To get a local copy up and running follow these simple steps.
 
-### Prerequisites
+<!-- ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+This is an example of how to list things you need to use the software and how to install them. -->
 
 ### Installation
 
@@ -146,10 +142,10 @@ In the project directory, you can run:
 
     It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+    The build is minified and the filenames include the hashes.
+    Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 <!-- USAGE EXAMPLES -->
 
@@ -202,10 +198,11 @@ Project Link - [https://github.com/itsevalieu/mockout](https://github.com/github
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/itsevalieu/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/itsevalieu/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/itsevalieu/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/itsevalieu/repo/issues
-[license-shield]: https://img.shields.io/github/license/itsevalieu/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/itsevalieu/mockout.svg?style=for-the-badge
+[contributors-url]: https://github.com/itsevalieu/mockout/network/members
+[stars-shield]: https://img.shields.io/github/stars/itsevalieu/mockout/stargazers
+[issues-shield]: https://img.shields.io/github/issues/itsevalieu/mockout/issues
+[license-shield]: https://img.shields.io/github/license/itsevalieu/mockout/blob/master/LICENSE.txt
+[license-url]: https://github.com/itsevalieu/mockout/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/eva-lieu
