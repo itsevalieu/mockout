@@ -19,10 +19,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
+<!-- [![Contributors][contributors-shield]][contributors-url] -->
+<!-- [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+[![Issues][issues-shield]][issues-url] -->
+
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -36,7 +37,7 @@
   <h3 align="center">Mockout.io</h3>
 
   <p align="center">
-    project_description
+    Generate Mock Technical Screening Interview Questions
     <br />
     <a href="https://github.com/itsevalieu/mockout"><strong>Explore the docs »</strong></a>
     <br />
@@ -79,17 +80,23 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`itsevalieu`, `mockout`, `itsevalieu`, `itsevalieu@gmail.com`, `Mockout.io`, `project_description`
+This project was created to streamline practicing technical screening interview questions based on the specific job description I'm applying for. By copy/pasting the job description into the form, I expect to get a list of flashcards back with related technical interview questions and answers.
+
+Currently, I'm using the Github API to store my flashcards as "issues." I know there's a better way to store my data, but this version is meant for the quick and easy storage of questions/answers. Also, I really wanted to use the Github API.
 
 ### Built With
 
-- []()
-- []()
-- []()
+- React
+- TypeScript
+- React Query
+- Sass
+- Jest
+- React Testing Library
+- Github API
+- [stopword](https://www.npmjs.com/package/stopword)
+- [axios](https://www.npmjs.com/package/axios)
 
 <!-- GETTING STARTED -->
 
@@ -116,48 +123,41 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-   In the project directory, you can run:
 
-### `npm start`
+### Available Scripts
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the project directory, you can run:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1.  Start the app in the development mode.
+    `sh npm start `
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    The page will reload if you make edits. You will also see any lint errors in the console.
 
-### `npm test`
+2.  Test
+    `sh npm test `
+    Launches the test runner in the interactive watch mode.
+    See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3.  Builds the app for production to the `build` folder.
 
-### `npm run build`
+        ```sh
+        npm run build
+        ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
 <!-- USAGE EXAMPLES -->
 
-## Usage
+<!-- ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <!-- ROADMAP -->
 
